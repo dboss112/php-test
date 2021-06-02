@@ -1,2 +1,2 @@
 #!/bin/sh
-$HOME/vendor/phing/phing/bin/phing -verbose "$@"
+/home/ubuntu/vendor/phing/phing/bin/phing -verbose "$@"
