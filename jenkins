@@ -2,6 +2,8 @@
 
 # Script invoked by Jenkins job. It builds project from ground-up every time.
 
+pwd
+
 # install QA tools and project dependencies
 php composer.phar install
 
