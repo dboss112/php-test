@@ -2,7 +2,9 @@
 
 # Script invoked by Jenkins job. It builds project from ground-up every time.
 
-pwd
+_mydir="`pwd`"
+ 
+echo "My working dir: $_mydir"
 
 # install QA tools and project dependencies
 php composer.phar install
