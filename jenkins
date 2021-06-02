@@ -2,13 +2,9 @@
 
 # Script invoked by Jenkins job. It builds project from ground-up every time.
 
-_mydir="`pwd`"
- 
-echo "My working dir: $_mydir"
-
 # install QA tools and project dependencies
 php composer.phar install
 
 # use Phing from QA tools vendor (require-dev)
 # use DefaultLogger to avoid ANSI escape sequences in Console Output
-/home/ubuntu/vendor/phing/phing/bin/phing full-build  -logger phing.listener.DefaultLogger
+./vendor/bin/phing full-build  -logger phing.listener.DefaultLogger
