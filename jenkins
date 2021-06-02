@@ -7,4 +7,4 @@ php composer.phar install
 
 # use Phing from QA tools vendor (require-dev)
 # use DefaultLogger to avoid ANSI escape sequences in Console Output
-./vendor/bin/phing full-build  -logger phing.listener.DefaultLogger
+/home/ubuntu/vendor/phing/phing/bin/phing full-build  -logger phing.listener.DefaultLogger
